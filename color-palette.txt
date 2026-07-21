@@ -1,0 +1,13 @@
+Primary -> #A3B18A
+Accent -> #E07A5F
+Background -> #FAF8F5
+Text -> #2B2D42
+
+💡 Gambaran Penerapan di Halaman Portofolio:
+Latar belakang layar: Menggunakan Soft Warm Cream (#FAF8F5).
+
+Judul & Teks Penjelas: Menggunakan Deep Espresso (#2B2D42) agar sangat jelas dibaca.
+
+Kartu Proyek / Box Keahlian: Gunakan Muted Sage Green (#A3B18A) dengan transparansi tipis atau warna padat sebagai latar kartu, lalu teks di dalamnya tetap menggunakan warna gelap.
+
+Tombol "Lihat Proyek" / "Hubungi Saya": Gunakan Warm Terracotta (#E07A5F) dengan teks putih/terang. Warna ini akan langsung menarik perhatian pengunjung tanpa terkesan galak.
