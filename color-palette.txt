@@ -3,6 +3,28 @@ Accent -> #E07A5F
 Background -> #FAF8F5
 Text -> #2B2D42
 
+Heading: Playfair Display atau Lora (Medium / Bold)
+Body Text: Plus Jakarta Sans atau Lato (Regular)
+
+| Kategori      | Pilihan                    |
+| ------------- | -------------------------- |
+| 🎨 Background | `#FAF8F5`                  |
+| 🎨 Primary    | `#A3B18A`                  |
+| 🎨 Accent     | `#E07A5F`                  |
+| 🎨 Text       | `#2B2D42`                  |
+| ✍️ Heading    | Playfair Display           |
+| ✍️ Body       | Plus Jakarta Sans          |
+| 📦 Container  | 1200px                     |
+| 📏 Radius     | 12px (button), 20px (card) |
+| 🌫 Shadow     | Soft                       |
+| 📱 Breakpoint | Default Tailwind           |
+| 🧩 Icon       | Lucide React               |
+| 📐 Spacing    | 8pt Grid                   |
+| 🎞 Animation  | Minimal                    |
+
+
+class-variance-authority (CVA) -> library untuk membangun sebuah UI
+ 
 💡 Gambaran Penerapan di Halaman Portofolio:
 Latar belakang layar: Menggunakan Soft Warm Cream (#FAF8F5).
 

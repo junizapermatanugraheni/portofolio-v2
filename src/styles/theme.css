@@ -1,0 +1,67 @@
+:root {
+    /* ========= COLORS ========= */
+
+    --background: #faf8f5;
+    --surface: #ffffff;
+
+    --primary: #a3b18a;
+    --primary-hover: #8d9e72;
+
+    --accent: #e07a5f;
+    --accent-hover: #d56b50;
+
+    --foreground: #2b2d42;
+    --foreground-secondary: #6c757d;
+
+    --border: #e8e5e0;
+
+    --success: #4caf50;
+    --warning: #f4a261;
+    --error: #d62828;
+
+    /* ========= BORDER RADIUS ========= */
+
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 20px;
+
+    /* ========= SHADOW ========= */
+
+    --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.04);
+
+    --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.05);
+
+    /* ========= CONTAINER ========= */
+
+    --container-width: 1200px;
+
+    /* ========= SPACING ========= */
+
+    --section-spacing: 120px;
+}
+
+@theme {
+    --color-background: var(--background);
+    --color-surface: var(--surface);
+
+    --color-primary: var(--primary);
+    --color-primary-hover: var(--primary-hover);
+
+    --color-accent: var(--accent);
+    --color-accent-hover: var(--accent-hover);
+
+    --color-foreground: var(--foreground);
+    --color-foreground-secondary: var(--foreground-secondary);
+
+    --color-border: var(--border);
+
+    --color-success: var(--success);
+    --color-warning: var(--warning);
+    --color-error: var(--error);
+
+    --radius-sm: var(--radius-sm);
+    --radius-md: var(--radius-md);
+    --radius-lg: var(--radius-lg);
+
+    --shadow-card: var(--shadow-md)
+}
