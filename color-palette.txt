@@ -33,3 +33,22 @@ Judul & Teks Penjelas: Menggunakan Deep Espresso (#2B2D42) agar sangat jelas dib
 Kartu Proyek / Box Keahlian: Gunakan Muted Sage Green (#A3B18A) dengan transparansi tipis atau warna padat sebagai latar kartu, lalu teks di dalamnya tetap menggunakan warna gelap.
 
 Tombol "Lihat Proyek" / "Hubungi Saya": Gunakan Warm Terracotta (#E07A5F) dengan teks putih/terang. Warna ini akan langsung menarik perhatian pengunjung tanpa terkesan galak.
+
+
+✨ feat(ui): implement reusable button component
+
+✨ feat(ui): create reusable typography components
+
+✨ feat(hero): build responsive hero section
+
+✨ feat(nav): create sticky navigation
+
+✨ feat(experience): implement timeline section
+
+✨ feat(project): build featured projects section
+
+✨ feat(contact): create contact section
+
+✨ chore: configure eslint and prettier
+
+✨ docs: update project documentation

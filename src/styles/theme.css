@@ -43,7 +43,7 @@
 @theme {
     --color-background: var(--background);
     --color-surface: var(--surface);
-
+    
     --color-primary: var(--primary);
     --color-primary-hover: var(--primary-hover);
 

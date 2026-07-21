@@ -7,6 +7,7 @@ import { Experience } from "@/component/sections/Experience";
 import { Hero } from "@/component/sections/Hero";
 import { Projects } from "@/component/sections/Projects";
 import { Button } from "@/component/ui/Button";
+import { Heading } from "@/component/ui/Text";
 import { useState } from "react";
 
 
@@ -34,6 +35,8 @@ export default function HomePage() {
         <Button size="sm" variant="success">Large</Button>
         <Button size="sm" variant="warning">Outline</Button>
       </div>
+
+      <Heading level="h1">Heading 1</Heading>
 
 
       <Navbar />
