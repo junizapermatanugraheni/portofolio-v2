@@ -8,7 +8,9 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
         return (
             <button ref={ref}
                 className={cn(buttonVariants({ variant, size }), className)} disabled={loading || disabled}
-                {...props} >{loading ? loadingText : children}</button>
+                {...props} >
+                {loading ? (loadingText) : (<span className="inline-flex items-center gap-2">{children}</span>)}
+            </button>
         )
     }
 );

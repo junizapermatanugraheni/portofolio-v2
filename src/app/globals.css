@@ -3,7 +3,7 @@
 @import "../styles/typography.css";
 @import "../styles/theme.css";
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -11,4 +11,11 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-body);
+}
+
+.container {
+  width: 100%;
+  max-width: var(--container-width);
+  margin-inline: auto;
+  padding-inline: 48px;
 }

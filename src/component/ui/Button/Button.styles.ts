@@ -29,9 +29,10 @@ export const buttonVariants = cva(
                 warning: "bg-warning text-white",
             },
             size: {
-                sm: "h-10 px-4 text-sm",
-                md: "h-12 px-6 text-base",
-                lg: "h-14 px-8 text-lg",
+                xs: "h-10 px-4 text-xs",
+                sm: "h-10 px-6 text-sm",
+                md: "h-12 px-8 text-base",
+                lg: "h-14 px-10 text-lg",
             },
         },
         defaultVariants: {
