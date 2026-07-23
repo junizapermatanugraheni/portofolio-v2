@@ -23,7 +23,7 @@ export const IconButtonVariants = cva(
                     "bg-primary text-white hover:bg-primary-hover border border-primary",
 
                 outline:
-                    "bg-transparent text-foreground border border-border hover:border-primary hover:bg-primary hover:text-white",
+                    "bg-transparent text-foreground border border-foreground hover:border-primary hover:bg-primary hover:text-white",
 
                 ghost:
                     "bg-transparent text-foreground hover:bg-primary/10 hover:text-primary",

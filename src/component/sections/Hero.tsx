@@ -8,8 +8,8 @@ import { IconButton } from "../ui/Button/IconButton";
 
 export function Hero() {
     return (
-        <Section id="hero" className="min-h-screen flex items-center">
-            <div className="max-w-2xl space-y-6">
+        <Section id="hero" className="pt-48 pb-24 flex flex-col justify-center">
+            <div className="space-y-6">
                 <div>
                     <Text variant="sm" tone="foreground">Hi, I`m</Text>
                     <Heading level="h2" className="text-accent">Juniza Permata Nugraheni</Heading>

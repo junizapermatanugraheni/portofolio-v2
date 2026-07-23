@@ -52,3 +52,15 @@ Tombol "Lihat Proyek" / "Hubungi Saya": Gunakan Warm Terracotta (#E07A5F) dengan
 ✨ chore: configure eslint and prettier
 
 ✨ docs: update project documentation
+
+Filosofi yang sedang kita pakai
+
+Selama kita membangun portfolio ini, tanpa sadar kita sudah mengikuti prinsip yang cukup umum dipakai di tim frontend profesional:
+
+Mulai dari kebutuhan nyata, bukan membuat puluhan komponen "untuk berjaga-jaga".
+Ekstrak komponen ketika UI mulai berulang.
+Gunakan CVA hanya jika memang ada variasi (variant, size, dsb.).
+Pisahkan logika, style, dan type agar setiap file punya satu tanggung jawab.
+Jaga API komponen tetap sederhana, misalnya variant, size, dan loading, daripada membuat banyak prop yang membingungkan.
+
+Kalau kamu mengikuti lima prinsip ini secara konsisten, lama-kelamaan kamu akan terbiasa berpikir seperti saat kita memutuskan membuat IconButton: bukan karena roadmap menyuruh, tetapi karena implementasi memang membutuhkannya. Itu adalah inti dari membangun reusable component dan design system yang baik.
