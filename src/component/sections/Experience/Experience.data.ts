@@ -1,101 +1,50 @@
-export const ExperienceData = [
+import { Experience } from "./Experience.type";
+
+export const ExperienceData: Experience[] = [
     {
         id: 1,
-
-        company: "Dinamika Mediakom",
-
-        position: "Frontend Developer",
-
-        period: "Jan 2025 - Present",
-
+        company: "Nova Digital Solutions",
+        position: "Senior Front End Developer",
+        period: "Mar 2024 - Present",
+        summary:
+            "Lead the development of scalable web applications using React and Next.js while collaborating closely with designers and backend engineers. Designed reusable UI components, improved application performance, and modernized legacy interfaces, resulting in a faster, more consistent, and user-friendly experience across multiple products.",
         technologies: [
             "React",
             "Next.js",
             "TypeScript",
-        ],
-
-        responsibilities: [
-            "Develop ERP UI",
-            "Integrate REST API",
-            "Build reusable component",
-        ],
-
-        achievements: [
-            "Redesign ERP UI menjadi lebih modern",
-            "Meningkatkan user experience",
+            "Tailwind CSS",
+            "GraphQL",
+            "Storybook",
         ],
     },
     {
         id: 2,
-
-        company: "CV Seven Smart Indonesia",
-
-        position: "Android Developer",
-
-        period: "Jan 2023 - Jan 2024",
-
+        company: "Bright Tech Indonesia",
+        position: "Front End Developer",
+        period: "Jan 2022 - Feb 2024",
+        summary:
+            "Developed internal enterprise dashboards and integrated REST APIs for business operations. Refactored legacy code into reusable Vue components, enhanced responsiveness across devices, and contributed to improving UI consistency while reducing frontend maintenance efforts.",
         technologies: [
-            "Flutter",
-        ],
-
-        responsibilities: [
-            "Develop ERP UI",
-            "Integrate REST API",
-            "Build reusable component",
-        ],
-
-        achievements: [
-            "Redesign ERP UI menjadi lebih modern",
-            "Meningkatkan user experience",
+            "Vue.js",
+            "JavaScript",
+            "SCSS",
+            "Bootstrap",
+            "REST API",
         ],
     },
-
     {
         id: 3,
-
-        company: "PT ABCDEF",
-
-        position: "Android Developer",
-
-        period: "Jan 2023 - Jan 2024",
-
+        company: "Pixel Studio",
+        position: "Junior Front End Developer",
+        period: "Jun 2020 - Dec 2021",
+        summary:
+            "Built responsive company profile websites and landing pages from UI designs using HTML, CSS, JavaScript, and Laravel Blade. Worked closely with designers to deliver pixel-perfect interfaces while improving mobile responsiveness and cross-browser compatibility across client projects.",
         technologies: [
-            "Flutter",
-        ],
-
-        responsibilities: [
-            "Develop ERP UI",
-            "Integrate REST API",
-            "Build reusable component",
-        ],
-
-        achievements: [
-            "Redesign ERP UI menjadi lebih modern",
-            "Meningkatkan user experience",
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "jQuery",
+            "Laravel Blade",
         ],
     },
-    {
-        id: 4,
-
-        company: "PT JAYA JAYA",
-
-        position: "Android Developer",
-
-        period: "Jan 2023 - Jan 2024",
-
-        technologies: [
-            "Flutter",
-        ],
-
-        responsibilities: [
-            "Develop ERP UI",
-            "Integrate REST API",
-            "Build reusable component",
-        ],
-
-        achievements: [
-            "Redesign ERP UI menjadi lebih modern",
-            "Meningkatkan user experience",
-        ],
-    }
-]
+];

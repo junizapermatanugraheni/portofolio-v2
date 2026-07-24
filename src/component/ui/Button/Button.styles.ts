@@ -23,7 +23,7 @@ export const buttonVariants = cva(
                 primary: "bg-accent text-white hover:bg-accent-hover",
                 secondary: "bg-primary text-foreground hover:bg-primary-hover",
                 outline: "border border-border bg-transparent hover:bg-primary/10",
-                ghost: "hover:bg-primary/10",
+                ghost: "hover:text-primary transition-transform duration-300 ease-out hover:-translate-y-2 hover:scale-105",
                 danger: "bg-error text-white",
                 success: "bg-success text-white",
                 warning: "bg-warning text-white",

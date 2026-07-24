@@ -6,15 +6,16 @@ export const badgeVariants = cva(
         'items-center',
         'justify-center',
         'font-medium',
-        'rounded-sm',
+        'rounded-md',
         'px-2.5',
         'py-1',
+        'border',
     ],
     {
         variants: {
             variant: {
-                primary: "bg-primary/10 text-primary",
-                secondary: "bg-foreground-secondary/10 text-foreground-secondary",
+                primary: "bg-primary/10 text-primary border-primary/50",
+                secondary: "bg-foreground-secondary/10 text-foreground-secondary border border-secondary",
                 accent: "bg-accent/10 text-accent",
                 danger: "bg-error/10 text-error",
                 success: "bg-success/10 text-success",

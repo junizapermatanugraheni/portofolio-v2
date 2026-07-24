@@ -24,16 +24,11 @@ export function Experience() {
     return (
         <Section id="experience" className="pb-24 flex flex-col justify-center">
             <div className="space-y-6">
-                <div className="grid grid-cols-1 lg:grid-cols-[1fr_2fr] gap-20">
-                    <ExperienceList
-                        items={ExperienceData}
-                        selectedId={selectedId}
-                        onSelect={handleSelect}
-                    />
-                    <ExperienceDetail
-                        experience={selectedExperience}
-                    />
-                </div>
+                <ExperienceList
+                    items={ExperienceData}
+                    selectedId={selectedId}
+                    onSelect={handleSelect}
+                />
             </div>
         </Section>
     )

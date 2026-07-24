@@ -27,18 +27,6 @@ export function ExperienceDetail({
                     <Badge key={tech} variant="success">{tech}</Badge>
                 ))}
             </div>
-            <Text variant="sm" weight="semibold" className="uppercase tracking-wide mt-8 mb-3">Job Description</Text>
-            <ul className="space-y-2">
-                {experience.responsibilities.map((res) => (
-                    <li key={res} className="flex gap-2"><Dot className="text-sm text-primary" /> {res}</li>
-                ))}
-            </ul>
-            <Text variant="sm" weight="semibold" className="uppercase tracking-wide mt-8 mb-3">Achievement</Text>
-            <ul className="space-y-2">
-                {experience.achievements.map((ach) => (
-                    <li key={ach} className="flex gap-2"><Dot className="text-sm text-primary" /> {ach}</li>
-                ))}
-            </ul>
         </div>
 
     );

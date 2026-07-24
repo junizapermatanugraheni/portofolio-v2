@@ -4,6 +4,5 @@ export interface Experience {
     position: string;
     period: string;
     technologies: string [];
-    responsibilities: string [];
-    achievements: string [];
+    summary: string;
 }
