@@ -5,12 +5,11 @@ import { ProjectCard } from "./ProjectCard";
 
 export function Projects() {
     return (
-        <Section id="project" className="pb-24 flex flex-col justify-center">
-            <div className="space-y-3">
+        <Section id="projects" className="pb-24 flex flex-col justify-center">
+            <div className="space-y-6">
                 <Heading level="h2" className="text-accent">Projects</Heading>
                 <ProjectCard items={ProjectData} />
             </div>
-
         </Section>
     )
 }

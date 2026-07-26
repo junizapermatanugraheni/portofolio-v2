@@ -10,7 +10,7 @@
     --accent: #e07a5f;
     --accent-hover: #d56b50;
 
---foreground: #2b2d42
+    --foreground: #2b2d42;
     --foreground-secondary: #6c757d;
 
     --border: #e8e5e0;
@@ -24,6 +24,7 @@
     --radius-sm: 8px;
     --radius-md: 12px;
     --radius-lg: 20px;
+    --radius-xl: 30px;
 
     /* ========= SHADOW ========= */
 
@@ -33,7 +34,7 @@
 
     /* ========= CONTAINER ========= */
 
-    --container-width: 1200px;
+    --container-width: 1400px;
 
     /* ========= SPACING ========= */
 
@@ -43,7 +44,7 @@
 @theme {
     --color-background: var(--background);
     --color-surface: var(--surface);
-    
+
     --color-primary: var(--primary);
     --color-primary-hover: var(--primary-hover);
 

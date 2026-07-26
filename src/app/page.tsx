@@ -8,11 +8,14 @@ import { Projects } from "@/component/sections/Projects"
 export default function HomePage() {
 
   return (
-    <main>
+    <div className="mx-auto flex gap-20">
       <Navbar></Navbar>
-      <Hero></Hero>
-      <Experience></Experience>
-      <Projects></Projects>
-    </main>
+      <main>
+        <Hero></Hero>
+        <Experience></Experience>
+        <Projects></Projects>
+      </main>
+    </div>
+
   )
 }

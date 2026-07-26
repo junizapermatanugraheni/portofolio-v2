@@ -8,7 +8,7 @@ import { IconButton } from "../ui/Button/IconButton";
 
 export function Hero() {
     return (
-        <Section id="hero" className="pt-48 pb-24 flex flex-col justify-center">
+        <Section id="hero" className="py-24 flex flex-col justify-center">
             <div className="space-y-6">
                 <div>
                     <Text variant="sm" tone="foreground">Hi, I`m</Text>

@@ -1,11 +1,11 @@
 import { cva } from "class-variance-authority";
 
 export const cardVariants = cva(
-    "rounded-lg transition-all duration-300 ease-out",
+    "rounded-xl transition-all duration-300 ease-out",
     {
         variants: {
             variant: {
-                outlined: "border border-border bg-background",
+                outlined: "border border-border bg-white",
                 elevated: "border border-border bg-background shadow-md",
                 ghost: "bg-transparent",
             },
