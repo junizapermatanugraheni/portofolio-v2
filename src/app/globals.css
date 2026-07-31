@@ -8,9 +8,23 @@ html {
 }
 
 body {
-  background: var(--background);
+  background:
+    radial-gradient(circle at top left,
+      rgba(124, 158, 178, .15),
+      transparent 30%),
+    radial-gradient(circle at top right,
+      rgba(184, 169, 201, .15),
+      transparent 35%),
+    radial-gradient(circle at bottom right,
+      rgba(240, 183, 164, .12),
+      transparent 30%),
+    linear-gradient(180deg,
+      var(--background),
+      var(--background-alt));
+  background-attachment: fixed;
   color: var(--foreground);
   font-family: var(--font-body);
+  min-height: 100vh;
 }
 
 .container {
@@ -18,4 +32,112 @@ body {
   max-width: var(--container-width);
   margin-inline: auto;
   padding-inline: 48px;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary);
+}
+
+.bg-soft {
+
+  background: var(--gradient-card);
+
+}
+
+.blob {
+
+  position: absolute;
+
+  border-radius: 999px;
+
+  filter: blur(70px);
+
+  opacity: .45;
+
+  z-index: -1;
+
+}
+
+.card-soft {
+
+  position: relative;
+
+  overflow: hidden;
+
+}
+
+.card-soft::before {
+
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  border-radius: inherit;
+
+  pointer-events: none;
+
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, .85),
+    inset 0 -1px 0 rgba(255, 255, 255, .2);
+
+}
+
+/* ========= TEXT GRADIENT ========= */
+
+.gradient-text {
+
+  background: var(--gradient-primary);
+
+  background-clip: text;
+  -webkit-background-clip: text;
+
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+
+  display: inline-block;
+
+}
+
+.bg-gradient-primary {
+    background-image: var(--gradient-primary);
+}
+
+.glass {
+
+  backdrop-filter: blur(18px);
+
+  background: rgba(255, 255, 255, .45);
+
+  border: 1px solid rgba(255, 255, 255, .55);
+
+}
+
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+::selection {
+  background: var(--primary);
+  color: white;
+}
+
+a {
+  transition: .3s;
 }

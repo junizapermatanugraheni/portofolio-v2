@@ -15,8 +15,12 @@ export function ExperienceList({
     items
 }: ExperienceListProps) {
     return (
-        <div className="space-y-4">
-            <Heading level="h2" className="text-accent">Relevant Experience</Heading>
+        <div className="space-y-6">
+            <Badge variant="glass" className="mb-5">🚀 Career Journey</Badge>
+            <Heading level="h2" className="space-x-3">
+                <span className="text-foreground">Relevant</span>
+                <span className="gradient-text">Experience</span>
+            </Heading>
             <div className="relative">
                 {/* Vertical Line */}
                 <div className="absolute left-3 top-0 h-full w-px bg-accent/20" />
@@ -34,7 +38,7 @@ export function ExperienceList({
                             <Text variant="sm" weight="normal">{item.summary}</Text>
                             <div className="flex flex-wrap gap-2">
                                 {item.technologies.map((tech) => (
-                                    <Badge key={tech} variant="success" className="text-[10px]">{tech}</Badge>
+                                    <Badge key={tech} variant="peach">{tech}</Badge>
                                 ))}
                             </div>
                         </div>
@@ -45,7 +49,7 @@ export function ExperienceList({
                 variant="ghost"
                 size="sm"
             >
-                View Full Resume <ArrowUpRight size={15}/>
+                View Full Resume <ArrowUpRight size={15} />
             </Button>
         </div>
     )

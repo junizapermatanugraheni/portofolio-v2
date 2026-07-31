@@ -9,10 +9,13 @@ export function Card({
     hover,
 }: CardProps) {
     return (
-        <div className={cn(cardVariants({ variant, hover }), className)}>
-            <div className="flex flex-col">
-                {children}
-            </div>
+        <div
+            className={cn(
+                cardVariants({ variant, hover }),
+                className
+            )}
+        >
+            {children}
         </div>
-    )
+    );
 }

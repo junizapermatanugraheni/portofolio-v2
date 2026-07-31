@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Playfair_Display, Plus_Jakarta_Sans } from "next/font/google";
+import { Nunito, Playfair_Display, Plus_Jakarta_Sans, Quicksand } from "next/font/google";
 import "./globals.css";
 
 const playfair = Playfair_Display({
@@ -12,6 +12,17 @@ const jakarta = Plus_Jakarta_Sans({
   subsets: ["latin"],
 });
 
+const headingFont = Quicksand({
+  subsets: ["latin"],
+  variable: "--font-heading",
+  weight: ["500", "600", "700"],
+})
+
+const bodyFont = Nunito({
+  subsets: ["latin"],
+  variable: "--font-body",
+  weight: ["400", "500", "600", "700"],
+})
 
 export const metadata: Metadata = {
   title: "Portfolio V2",
@@ -27,7 +38,7 @@ export default function RootLayout({
     <html
       lang="en"
     >
-      <body className={`${playfair.variable} ${jakarta.variable} h-full antialiased`}>{children}</body>
+      <body className={`${headingFont.variable} ${bodyFont.variable} h-full antialiased`}>{children}</body>
     </html>
   );
 }

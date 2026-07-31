@@ -22,7 +22,7 @@ export function Experience() {
     };
 
     return (
-        <Section id="experience" className="pb-24 flex flex-col justify-center">
+        <Section id="experience" className="py-24 flex flex-col justify-center bg-primary-light/40">
             <div className="space-y-6">
                 <ExperienceList
                     items={ExperienceData}

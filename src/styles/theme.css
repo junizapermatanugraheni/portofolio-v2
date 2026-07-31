@@ -1,68 +1,230 @@
 :root {
-    /* ========= COLORS ========= */
 
-    --background: #e8e5e0;
-    --surface: #ffffff;
+    /* =======================================================
+       COLORS
+    ======================================================= */
 
-    --primary: #a3b18a;
-    --primary-hover: #8d9e72;
+    /* Brand */
 
-    --accent: #e07a5f;
-    --accent-hover: #d56b50;
+    --primary: #7C9EB2;
+    --primary-hover: #6E91A6;
+    --primary-light: #DDEAF1;
+    --primary-soft: rgba(124, 158, 178, .12);
 
-    --foreground: #2b2d42;
-    --foreground-secondary: #6c757d;
+    --secondary: #B8A9C9;
+    --secondary-hover: #AA9BB9;
+    --secondary-light: #ECE6F3;
 
-    --border: #e8e5e0;
+    --accent: #F0B7A4;
+    --accent-hover: #E5A38C;
+    --accent-light: #FBE8E1;
 
-    --success: #4caf50;
-    --warning: #f4a261;
-    --error: #d62828;
+    --mint: #A8D5BA;
+    --peach: #FFDAB9;
+    --lavender: #E6E6FA;
 
-    /* ========= BORDER RADIUS ========= */
+    /* Background */
 
-    --radius-sm: 8px;
-    --radius-md: 12px;
-    --radius-lg: 20px;
-    --radius-xl: 30px;
+    --background: #F0F4F8;
+    --background-alt: #E8EEF4;
+    --surface: #F7F9FC;
 
-    /* ========= SHADOW ========= */
+    /* Text */
 
-    --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.04);
+    --foreground: #2D3748;
+    --foreground-secondary: #5F6C7B;
+    --foreground-subtle: #94A3B8;
 
-    --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.05);
+    /* Border */
 
-    /* ========= CONTAINER ========= */
+    --border: rgba(255, 255, 255, .65);
+
+    /* Status */
+
+    --success: #69B98A;
+    --warning: #F5C26B;
+    --error: #E57373;
+
+    /* =======================================================
+       ICON BUTTON COLOR
+    ======================================================= */
+    --icon-primary-bg: #E6EEF3;
+    --icon-primary: #5E8196;
+    --icon-primary-hover: #4D7085;
+
+    --icon-secondary-bg: #EFEAF5;
+    --icon-secondary: #8F7FA7;
+    --icon-secondary-hover: #7D6D96;
+
+    --icon-accent-bg: #FCEDE7;
+    --icon-accent: #D48D76;
+    --icon-accent-hover: #C67A62;
+
+    --icon-mint-bg: #ECF7F0;
+    --icon-mint: #5F9B76;
+    --icon-mint-hover: #4D8A65;
+
+    --icon-peach-bg: #FFF4EA;
+    --icon-peach: #D89A68;
+    --icon-peach-hover: #C98653;
+
+    --icon-lavender-bg: #F5F4FD;
+    --icon-lavender: #8E84BC;
+    --icon-lavender-hover: #786DA8;
+
+    --icon-neutral-bg: #F5F7FA;
+    --icon-neutral: #556070;
+    --icon-neutral-hover: #2D3748;
+
+    /* =======================================================
+       RADIUS
+    ======================================================= */
+
+    --radius-sm: 10px;
+    --radius-md: 16px;
+    --radius-lg: 24px;
+    --radius-xl: 32px;
+
+    /* =======================================================
+       SHADOW
+    ======================================================= */
+
+    --shadow-light:
+        -8px -8px 20px rgba(255, 255, 255, .95);
+
+    --shadow-dark:
+        8px 8px 20px rgba(163, 177, 198, .45);
+
+    --shadow-card:
+        var(--shadow-light),
+        var(--shadow-dark);
+
+    --shadow-light-hover:
+        -6px -6px 14px rgba(255, 255, 255, .92);
+
+    --shadow-dark-hover:
+        6px 6px 18px rgba(180, 190, 205, .25);
+
+    --shadow-card-hover:
+        var(--shadow-light-hover),
+        var(--shadow-dark-hover);
+
+    --shadow-inset:
+        inset -4px -4px 10px rgba(255, 255, 255, .95),
+        inset 4px 4px 10px rgba(163, 177, 198, .45);
+
+    /* =======================================================
+       GRADIENT
+    ======================================================= */
+
+    --gradient-primary:
+        linear-gradient(135deg,
+            var(--primary),
+            var(--secondary),
+            var(--accent));
+
+    --gradient-soft:
+        linear-gradient(135deg,
+            rgba(124, 158, 178, .12),
+            rgba(184, 169, 201, .12));
+
+    --gradient-card:
+        linear-gradient(180deg,
+            rgba(255, 255, 255, .85),
+            rgba(247, 249, 252, .96));
+
+    /* =======================================================
+       LAYOUT
+    ======================================================= */
 
     --container-width: 1400px;
 
-    /* ========= SPACING ========= */
-
     --section-spacing: 120px;
+
+    /* =======================================================
+       TYPOGRAPHY
+    ======================================================= */
+
+    --font-heading: "Quicksand", sans-serif;
+    --font-body: "Nunito", sans-serif;
 }
 
 @theme {
+
+    /* Background */
+
     --color-background: var(--background);
+    --color-background-alt: var(--background-alt);
     --color-surface: var(--surface);
+
+    /* Brand */
 
     --color-primary: var(--primary);
     --color-primary-hover: var(--primary-hover);
+    --color-primary-light: var(--primary-light);
+    --color-primary-soft: var(--primary-soft);
+
+    --color-secondary: var(--secondary);
+    --color-secondary-hover: var(--secondary-hover);
+    --color-secondary-light: var(--secondary-light);
 
     --color-accent: var(--accent);
     --color-accent-hover: var(--accent-hover);
+    --color-accent-light: var(--accent-light);
+
+    --color-mint: var(--mint);
+    --color-peach: var(--peach);
+    --color-lavender: var(--lavender);
+
+    /* Icon */
+
+    --icon-primary: #5E8196;
+    --icon-secondary: #8F7FA7;
+    --icon-accent: #D48D76;
+    --icon-mint: #5F9B76;
+    --icon-peach: #D89A68;
+    --icon-lavender: #8E84BC;
+    --icon-neutral: #556070;
+
+    /* Icon Background */
+
+    --icon-primary-bg: #E6EEF3;
+    --icon-secondary-bg: #EFEAF5;
+    --icon-accent-bg: #FCEDE7;
+    --icon-mint-bg: #ECF7F0;
+    --icon-peach-bg: #FFF4EA;
+    --icon-lavender-bg: #F5F4FD;
+    --icon-neutral-bg: #F5F7FA;
+
+    /* Text */
 
     --color-foreground: var(--foreground);
     --color-foreground-secondary: var(--foreground-secondary);
+    --color-foreground-subtle: var(--foreground-subtle);
+
+    /* Border */
 
     --color-border: var(--border);
+
+    /* Status */
 
     --color-success: var(--success);
     --color-warning: var(--warning);
     --color-error: var(--error);
 
+    /* Radius */
+
     --radius-sm: var(--radius-sm);
     --radius-md: var(--radius-md);
     --radius-lg: var(--radius-lg);
+    --radius-xl: var(--radius-xl);
 
-    --shadow-card: var(--shadow-md)
+    /* Shadow */
+
+    --shadow-card: var(--shadow-card);
+    --shadow-card-hover: var(--shadow-card-hover);
+    --shadow-inset: var(--shadow-inset);
+
+    --font-heading: var(--font-heading);
+    --font-body: var(--font-body);
 }

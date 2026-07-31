@@ -1,22 +1,46 @@
 import { cva } from "class-variance-authority";
 
 export const cardVariants = cva(
-    "rounded-xl transition-all duration-300 ease-out",
+    [
+        "rounded-[28px]",
+        "transition-all",
+        "duration-300",
+        "ease-out",
+        "overflow-hidden",
+    ].join(" "),
     {
         variants: {
             variant: {
-                outlined: "border border-border bg-white",
-                elevated: "border border-border bg-background shadow-md",
+                outlined: [
+                    "bg-background",
+                    "border",
+                    "border-white/70",
+                    "shadow-[var(--shadow-card)]",
+                ].join(" "),
+
+                elevated: [
+                    "bg-background",
+                    "backdrop-blur-lg",
+                    "shadow-[var(--shadow-card)]",
+                ].join(" "),
+
                 ghost: "bg-transparent",
             },
+
             hover: {
-                true: "-translate-y-1 shadow-lg",
+                true: [
+                    "hover:-translate-y-1",
+                    "hover:shadow-[var(--shadow-card-hover)]",
+                    "hover:border-white",
+                ].join(" "),
+
                 false: "",
             },
         },
+
         defaultVariants: {
             variant: "outlined",
-            hover: false,
+            hover: true,
         },
     }
 );
