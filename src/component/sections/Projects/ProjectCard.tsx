@@ -5,6 +5,7 @@ import { Text } from "@/component/ui/Text";
 import { Badge } from "@/component/ui/Badge";
 import { Button } from "@/component/ui/Button";
 import { ArrowUpRight } from "lucide-react";
+import Link from "next/link";
 
 interface ProjectCardProps {
     items: Project[];
@@ -30,7 +31,7 @@ export function ProjectCard({
                                         variant="glass"
                                         size="xs"
                                     >
-                                       🚀 {project.label}
+                                        🚀 {project.label}
                                     </Badge>
 
                                     <Text
@@ -95,12 +96,15 @@ export function ProjectCard({
                 ))}
             </div>
             <hr className="my-6 border-primary/30" />
-            <Button
-                variant="ghost"
-                size="sm"
-            >
-                View All Project <ArrowUpRight size={15} />
-            </Button>
+            <Link href="/projects">
+                <Button
+                    variant="ghost"
+                    size="sm"
+                >
+                    View All Projects
+                    <ArrowUpRight size={15} />
+                </Button>
+            </Link>
         </div>
     )
 }

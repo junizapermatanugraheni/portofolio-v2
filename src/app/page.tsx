@@ -1,5 +1,6 @@
 "use client"
 
+import { Footer } from "@/component/layout/Footer"
 import { Navbar } from "@/component/layout/Navbar"
 import { Contact } from "@/component/sections/Contact"
 import { Experience } from "@/component/sections/Experience"
@@ -17,6 +18,7 @@ export default function HomePage() {
         <Projects></Projects>
         <Contact></Contact>
       </main>
+      <Footer></Footer>
     </div>
   )
 }
