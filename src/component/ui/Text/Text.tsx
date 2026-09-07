@@ -1,6 +1,6 @@
 import { cn } from "@/lib/cn";
-import { textVariants } from "./Text.styles";
 import { TextProps } from "./Text.types";
+import { textVariants } from "./Text.styles";
 
 export function Text({
     variant, tone, weight, className, children, ...props
