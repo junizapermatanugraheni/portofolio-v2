@@ -24,7 +24,7 @@ export function ExperienceDetail({
             </div>
             <div className="flex flex-wrap gap-2">
                 {experience.technologies.map((tech) => (
-                    <Badge key={tech} variant="success">{tech}</Badge>
+                    <Badge key={tech} variant="peach">{tech}</Badge>
                 ))}
             </div>
         </div>
