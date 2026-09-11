@@ -3,48 +3,48 @@ import { Experience } from "./Experience.type";
 export const ExperienceData: Experience[] = [
     {
         id: 1,
-        company: "Nova Digital Solutions",
-        position: "Senior Front End Developer",
-        period: "Mar 2024 - Present",
+        company: "PT Dinamika Mediakom",
+        position: "Front End Developer",
+        period: "Jan 2025 - Present",
+        location: "Indonesia",
         summary:
-            "Lead the development of scalable web applications using React and Next.js while collaborating closely with designers and backend engineers. Designed reusable UI components, improved application performance, and modernized legacy interfaces, resulting in a faster, more consistent, and user-friendly experience across multiple products.",
+            "Engineered internal enterprise dashboards, inventory tracking tools, and reporting modules. Refactored spaghetti code into modular component trees while integrating complex RESTful APIs.",
+        highlights: [
+            "Refactored legacy monolithic dashboards into reusable Vue/React components, reducing UI maintenance debt by 35%.",
+            "Integrated complex REST APIs with optimistic client state, error fallbacks, and retry mechanisms.",
+            "Standardized responsive breakpoints ensuring seamless operation across field tablets and desktop monitors.",
+        ],
         technologies: [
+            "Vue.js",
             "React",
-            "Next.js",
             "TypeScript",
             "Tailwind CSS",
-            "GraphQL",
-            "Storybook",
+            "REST API",
+            "Zustand",
         ],
     },
     {
         id: 2,
-        company: "Bright Tech Indonesia",
-        position: "Front End Developer",
-        period: "Jan 2022 - Feb 2024",
+        company: "CV Seven Smarts Indonesia",
+        position: "Mobile Developer",
+        period: "Jan 2023 - Jan 2024",
+        location: "Indonesia",
         summary:
-            "Developed internal enterprise dashboards and integrated REST APIs for business operations. Refactored legacy code into reusable Vue components, enhanced responsiveness across devices, and contributed to improving UI consistency while reducing frontend maintenance efforts.",
-        technologies: [
-            "Vue.js",
-            "JavaScript",
-            "SCSS",
-            "Bootstrap",
-            "REST API",
+            "Engineered mobile solutions across tracking, reporting, and planning applications. Modernized existing Flutter codebases for better maintainability and integrated RESTful APIs to deliver seamless user experiences",
+        highlights: [
+            "Design and implemented responsive mobile user interface (UI) using flutter, integrating them seamlessly with RESTful APIs provided by the CodeIgniter backend team.",
+            "Developed new features and enhanced existing app interfaces to optimize usability and improve overall user experience (UX).",
+            "Engaged directly with clients to identify usability challenges, gather functional requirements, and provide effective technical solutions.",
+            "Guided and supported clients during the initial rollout and adoption phase to ensure smooth operational integration"
         ],
-    },
-    {
-        id: 3,
-        company: "Pixel Studio",
-        position: "Junior Front End Developer",
-        period: "Jun 2020 - Dec 2021",
-        summary:
-            "Built responsive company profile websites and landing pages from UI designs using HTML, CSS, JavaScript, and Laravel Blade. Worked closely with designers to deliver pixel-perfect interfaces while improving mobile responsiveness and cross-browser compatibility across client projects.",
         technologies: [
-            "HTML",
-            "CSS",
-            "JavaScript",
-            "jQuery",
-            "Laravel Blade",
+            "Flutter",
+            "Dart",
+            "REST API",
+            "State Management",
+            "Location Services (GPS)",
+            "Git & GitHub",
+            "Offline Caching"
         ],
     },
 ];

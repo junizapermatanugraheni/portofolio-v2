@@ -2,9 +2,9 @@ import { cva } from "class-variance-authority";
 
 export const cardVariants = cva(
     [
-        "rounded-[28px]",
+        "rounded-2xl",
         "transition-all",
-        "duration-300",
+        "duration-200",
         "ease-out",
         "overflow-hidden",
     ].join(" "),
@@ -12,16 +12,17 @@ export const cardVariants = cva(
         variants: {
             variant: {
                 outlined: [
-                    "bg-background",
+                    "bg-surface",
                     "border",
-                    "border-white/70",
+                    "border-border",
                     "shadow-[var(--shadow-card)]",
                 ].join(" "),
 
                 elevated: [
-                    "bg-background",
-                    "backdrop-blur-lg",
-                    "shadow-[var(--shadow-card)]",
+                    "bg-surface",
+                    "border",
+                    "border-border-subtle",
+                    "shadow-[var(--shadow-elevated)]",
                 ].join(" "),
 
                 ghost: "bg-transparent",
@@ -29,9 +30,9 @@ export const cardVariants = cva(
 
             hover: {
                 true: [
-                    "hover:-translate-y-1",
+                    "hover:-translate-y-0.5",
                     "hover:shadow-[var(--shadow-card-hover)]",
-                    "hover:border-white",
+                    "hover:border-border",
                 ].join(" "),
 
                 false: "",

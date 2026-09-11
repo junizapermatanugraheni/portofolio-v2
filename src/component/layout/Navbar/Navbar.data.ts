@@ -1,5 +1,9 @@
 export const navItems = [
     {
+        label: "Work",
+        href: "#projects",
+    },
+    {
         label: "About",
         href: "#about",
     },
@@ -8,11 +12,11 @@ export const navItems = [
         href: "#experience",
     },
     {
-        label: "Projects",
-        href: "#projects",
+        label: "Process",
+        href: "#process",
     },
     {
         label: "Contact",
         href: "#contact",
     }
-]
+];

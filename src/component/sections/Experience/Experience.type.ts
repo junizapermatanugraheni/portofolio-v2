@@ -3,6 +3,8 @@ export interface Experience {
     company: string;
     position: string;
     period: string;
-    technologies: string [];
+    location?: string;
+    technologies: string[];
     summary: string;
+    highlights?: string[];
 }

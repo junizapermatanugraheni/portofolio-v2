@@ -13,9 +13,9 @@ export function ExperienceDetail({
     return (
         <div className="space-y-3">
             <div className="flex gap-3 items-center my-3">
-                <div className="flex-grow border-t border-accent"></div>
+                <div className="grow border-t border-accent"></div>
                 <Heading level="h5">Description</Heading>
-                <div className="flex-grow border-t border-accent"></div>
+                <div className="grow border-t border-accent"></div>
             </div>
             <div>
                 <Heading level="h5"> {experience.position} </Heading>

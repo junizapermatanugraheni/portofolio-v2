@@ -6,147 +6,139 @@
 
     /* Brand */
 
-    --primary: #7C9EB2;
-    --primary-hover: #6E91A6;
-    --primary-light: #DDEAF1;
-    --primary-soft: rgba(124, 158, 178, .12);
+    --primary: #2C5364;
+    --primary-hover: #203E4C;
+    --primary-light: #EBF2F5;
+    --primary-soft: rgba(44, 83, 100, 0.08);
 
-    --secondary: #B8A9C9;
-    --secondary-hover: #AA9BB9;
-    --secondary-light: #ECE6F3;
+    --secondary: #6B7B8C;
+    --secondary-hover: #546373;
+    --secondary-light: #F0F3F6;
 
-    --accent: #F0B7A4;
-    --accent-hover: #E5A38C;
-    --accent-light: #FBE8E1;
+    --accent: #D96B43;
+    --accent-hover: #BF5732;
+    --accent-light: #FDF1EB;
+    --accent-soft: rgba(217, 107, 67, 0.1);
 
-    --mint: #A8D5BA;
-    --peach: #FFDAB9;
-    --lavender: #E6E6FA;
+    --mint: #3B7A57;
+    --mint-light: #EEF7F2;
+    --peach: #D96B43;
+    --peach-light: #FDF1EB;
+    --lavender: #5E588E;
+    --lavender-light: #F2F1F9;
 
     /* Background */
 
-    --background: #F0F4F8;
-    --background-alt: #E8EEF4;
-    --surface: #F7F9FC;
+    --background: #FAF8F5;
+    --background-alt: #F3EFE8;
+    --surface: #FFFFFF;
+    --surface-subtle: #F6F3EC;
 
     /* Text */
 
-    --foreground: #2D3748;
-    --foreground-secondary: #5F6C7B;
-    --foreground-subtle: #94A3B8;
+    --foreground: #181B20;
+    --foreground-secondary: #525B6C;
+    --foreground-subtle: #8792A5;
 
     /* Border */
 
-    --border: rgba(255, 255, 255, .65);
+    --border: #E6E1D8;
+    --border-subtle: rgba(24, 27, 32, 0.06);
 
     /* Status */
 
-    --success: #69B98A;
-    --warning: #F5C26B;
-    --error: #E57373;
+    --success: #2E7D56;
+    --warning: #D97706;
+    --error: #DC2626;
 
     /* =======================================================
        ICON BUTTON COLOR
     ======================================================= */
-    --icon-primary-bg: #E6EEF3;
-    --icon-primary: #5E8196;
-    --icon-primary-hover: #4D7085;
+    --icon-primary-bg: #EBF2F5;
+    --icon-primary: #2C5364;
+    --icon-primary-hover: #203E4C;
 
-    --icon-secondary-bg: #EFEAF5;
-    --icon-secondary: #8F7FA7;
-    --icon-secondary-hover: #7D6D96;
+    --icon-secondary-bg: #F0F3F6;
+    --icon-secondary: #6B7B8C;
+    --icon-secondary-hover: #546373;
 
-    --icon-accent-bg: #FCEDE7;
-    --icon-accent: #D48D76;
-    --icon-accent-hover: #C67A62;
+    --icon-accent-bg: #FDF1EB;
+    --icon-accent: #D96B43;
+    --icon-accent-hover: #BF5732;
 
-    --icon-mint-bg: #ECF7F0;
-    --icon-mint: #5F9B76;
-    --icon-mint-hover: #4D8A65;
+    --icon-mint-bg: #EEF7F2;
+    --icon-mint: #3B7A57;
+    --icon-mint-hover: #2E6345;
 
-    --icon-peach-bg: #FFF4EA;
-    --icon-peach: #D89A68;
-    --icon-peach-hover: #C98653;
+    --icon-peach-bg: #FDF1EB;
+    --icon-peach: #D96B43;
+    --icon-peach-hover: #BF5732;
 
-    --icon-lavender-bg: #F5F4FD;
-    --icon-lavender: #8E84BC;
-    --icon-lavender-hover: #786DA8;
+    --icon-lavender-bg: #F2F1F9;
+    --icon-lavender: #5E588E;
+    --icon-lavender-hover: #4B4673;
 
-    --icon-neutral-bg: #F5F7FA;
-    --icon-neutral: #556070;
-    --icon-neutral-hover: #2D3748;
+    --icon-neutral-bg: #F5F3ED;
+    --icon-neutral: #525B6C;
+    --icon-neutral-hover: #181B20;
 
     /* =======================================================
        RADIUS
     ======================================================= */
 
-    --radius-sm: 10px;
-    --radius-md: 16px;
-    --radius-lg: 24px;
-    --radius-xl: 32px;
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 18px;
+    --radius-xl: 24px;
 
     /* =======================================================
        SHADOW
     ======================================================= */
 
-    --shadow-light:
-        -8px -8px 20px rgba(255, 255, 255, .95);
-
-    --shadow-dark:
-        8px 8px 20px rgba(163, 177, 198, .45);
-
     --shadow-card:
-        var(--shadow-light),
-        var(--shadow-dark);
-
-    --shadow-light-hover:
-        -6px -6px 14px rgba(255, 255, 255, .92);
-
-    --shadow-dark-hover:
-        6px 6px 18px rgba(180, 190, 205, .25);
+        0 1px 3px rgba(24, 27, 32, 0.04),
+        0 1px 2px rgba(24, 27, 32, 0.02);
 
     --shadow-card-hover:
-        var(--shadow-light-hover),
-        var(--shadow-dark-hover);
+        0 14px 28px -6px rgba(24, 27, 32, 0.08),
+        0 8px 12px -6px rgba(24, 27, 32, 0.03);
+
+    --shadow-elevated:
+        0 20px 40px -15px rgba(24, 27, 32, 0.07);
 
     --shadow-inset:
-        inset -4px -4px 10px rgba(255, 255, 255, .95),
-        inset 4px 4px 10px rgba(163, 177, 198, .45);
+        inset 0 1px 2px rgba(24, 27, 32, 0.04);
 
     /* =======================================================
        GRADIENT
     ======================================================= */
 
     --gradient-primary:
-        linear-gradient(135deg,
-            var(--primary),
-            var(--secondary),
-            var(--accent));
+        linear-gradient(135deg, #2C5364 0%, #3F6D82 100%);
+
+    --gradient-accent:
+        linear-gradient(135deg, #D96B43 0%, #EA845E 100%);
 
     --gradient-soft:
-        linear-gradient(135deg,
-            rgba(124, 158, 178, .12),
-            rgba(184, 169, 201, .12));
+        linear-gradient(180deg, #FFFFFF 0%, #FAF8F5 100%);
 
     --gradient-card:
-        linear-gradient(180deg,
-            rgba(255, 255, 255, .85),
-            rgba(247, 249, 252, .96));
+        linear-gradient(180deg, #FFFFFF 0%, #FAF8F5 100%);
 
     /* =======================================================
        LAYOUT
     ======================================================= */
 
-    --container-width: 1400px;
+    --container-width: 1200px;
 
-    --section-spacing: 120px;
+    --section-spacing: 96px;
 
     /* =======================================================
        TYPOGRAPHY
     ======================================================= */
 
-    --font-heading: "Quicksand", sans-serif;
-    --font-body: "Nunito", sans-serif;
+    --font-heading: var(--font-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    --font-body: var(--font-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 
 @theme {
@@ -156,6 +148,7 @@
     --color-background: var(--background);
     --color-background-alt: var(--background-alt);
     --color-surface: var(--surface);
+    --color-surface-subtle: var(--surface-subtle);
 
     /* Brand */
 
@@ -171,6 +164,7 @@
     --color-accent: var(--accent);
     --color-accent-hover: var(--accent-hover);
     --color-accent-light: var(--accent-light);
+    --color-accent-soft: var(--accent-soft);
 
     --color-mint: var(--mint);
     --color-peach: var(--peach);
@@ -178,23 +172,23 @@
 
     /* Icon */
 
-    --icon-primary: #5E8196;
-    --icon-secondary: #8F7FA7;
-    --icon-accent: #D48D76;
-    --icon-mint: #5F9B76;
-    --icon-peach: #D89A68;
-    --icon-lavender: #8E84BC;
-    --icon-neutral: #556070;
+    --icon-primary: #2C5364;
+    --icon-secondary: #6B7B8C;
+    --icon-accent: #D96B43;
+    --icon-mint: #3B7A57;
+    --icon-peach: #D96B43;
+    --icon-lavender: #5E588E;
+    --icon-neutral: #525B6C;
 
     /* Icon Background */
 
-    --icon-primary-bg: #E6EEF3;
-    --icon-secondary-bg: #EFEAF5;
-    --icon-accent-bg: #FCEDE7;
-    --icon-mint-bg: #ECF7F0;
-    --icon-peach-bg: #FFF4EA;
-    --icon-lavender-bg: #F5F4FD;
-    --icon-neutral-bg: #F5F7FA;
+    --icon-primary-bg: #EBF2F5;
+    --icon-secondary-bg: #F0F3F6;
+    --icon-accent-bg: #FDF1EB;
+    --icon-mint-bg: #EEF7F2;
+    --icon-peach-bg: #FDF1EB;
+    --icon-lavender-bg: #F2F1F9;
+    --icon-neutral-bg: #F5F3ED;
 
     /* Text */
 
@@ -205,6 +199,7 @@
     /* Border */
 
     --color-border: var(--border);
+    --color-border-subtle: var(--border-subtle);
 
     /* Status */
 
@@ -223,6 +218,7 @@
 
     --shadow-card: var(--shadow-card);
     --shadow-card-hover: var(--shadow-card-hover);
+    --shadow-elevated: var(--shadow-elevated);
     --shadow-inset: var(--shadow-inset);
 
     --font-heading: var(--font-heading);

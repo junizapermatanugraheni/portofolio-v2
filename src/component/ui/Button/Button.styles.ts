@@ -6,24 +6,19 @@ export const buttonVariants = cva(
         "items-center",
         "justify-center",
         "gap-2",
-
-        "rounded-2xl",
-
+        "rounded-xl",
         "font-medium",
-
+        "text-sm",
         "transition-all",
-        "duration-300",
+        "duration-200",
         "ease-out",
-
         "cursor-pointer",
         "select-none",
-
         "disabled:pointer-events-none",
         "disabled:opacity-50",
-
         "focus-visible:outline-none",
         "focus-visible:ring-2",
-        "focus-visible:ring-primary/30",
+        "focus-visible:ring-primary/25",
     ],
     {
         variants: {
@@ -31,100 +26,85 @@ export const buttonVariants = cva(
                 primary: [
                     "bg-primary",
                     "text-white",
-                    "shadow-card",
-
+                    "shadow-sm",
                     "hover:bg-primary-hover",
-                    "hover:shadow-card-hover",
-                    "hover:-translate-y-0.5",
+                    "hover:shadow-card",
+                    "active:scale-[0.98]",
                 ].join(" "),
                 secondary: [
                     "bg-secondary",
                     "text-white",
-                    "shadow-card",
-
+                    "shadow-sm",
                     "hover:bg-secondary-hover",
-                    "hover:shadow-card-hover",
-                    "hover:-translate-y-0.5",
+                    "hover:shadow-card",
+                    "active:scale-[0.98]",
+                ].join(" "),
+                accent: [
+                    "bg-accent",
+                    "text-white",
+                    "shadow-sm",
+                    "hover:bg-accent-hover",
+                    "hover:shadow-card",
+                    "active:scale-[0.98]",
                 ].join(" "),
                 soft: [
-                    "bg-primary-soft",
+                    "bg-primary-light",
                     "text-primary",
-
                     "border",
-                    "border-white/60",
-
-                    "shadow-card",
-
-                    "hover:bg-primary-light",
-                    "hover:shadow-card-hover",
+                    "border-primary/15",
+                    "hover:bg-primary/10",
+                    "active:scale-[0.98]",
                 ].join(" "),
                 outline: [
                     "bg-surface",
-
                     "border",
-
                     "border-border",
-
                     "text-foreground",
-
-                    "shadow-card",
-
-                    "hover:border-primary",
-
+                    "shadow-xs",
+                    "hover:border-primary/40",
                     "hover:text-primary",
-
-                    "hover:shadow-card-hover",
+                    "hover:bg-surface-subtle",
+                    "active:scale-[0.98]",
                 ].join(" "),
                 ghost: [
                     "bg-transparent",
-
-                    "text-primary",
-
-                    "hover:bg-primary-soft",
-
-                    "hover:-translate-y-0.5",
+                    "text-foreground-secondary",
+                    "hover:text-foreground",
+                    "hover:bg-surface-subtle",
+                    "active:scale-[0.98]",
                 ].join(" "),
                 glass: [
-                    "bg-white/50",
-
-                    "backdrop-blur-xl",
-
+                    "bg-surface/85",
+                    "backdrop-blur-md",
                     "border",
-
-                    "border-white/70",
-
-                    "text-primary",
-
-                    "shadow-card",
-
-                    "hover:shadow-card-hover",
+                    "border-border",
+                    "text-foreground",
+                    "shadow-xs",
+                    "hover:bg-surface",
+                    "hover:border-primary/30",
+                    "active:scale-[0.98]",
                 ].join(" "),
                 danger: [
                     "bg-error",
                     "text-white",
-                    "shadow-card",
+                    "shadow-sm",
                 ].join(" "),
                 success: [
                     "bg-success",
                     "text-white",
-                    "shadow-card",
-
-                    "hover:-translate-y-0.5",
+                    "shadow-sm",
                 ].join(" "),
                 warning: [
                     "bg-warning",
                     "text-white",
-                    "shadow-card",
+                    "shadow-sm",
                 ].join(" "),
             },
             size: {
-                xs: "h-9 px-4 text-xs",
-
-                sm: "h-10 px-5 text-sm",
-
-                md: "h-12 px-7 text-base",
-
-                lg: "h-14 px-9 text-lg",
+                xs: "h-8 px-3 text-xs",
+                sm: "h-9 px-4 text-xs font-medium",
+                md: "h-11 px-5 text-sm font-medium",
+                lg: "h-12 px-7 text-base font-semibold",
             },
         },
         defaultVariants: {

@@ -6,51 +6,43 @@ export const badgeVariants = cva(
         "items-center",
         "justify-center",
         "gap-1.5",
-
         "rounded-full",
-
         "border",
-
         "font-medium",
-
-        "transition-all",
-        "duration-300",
-        "ease-out",
-
-        "shadow-card",
-
-        
+        "tracking-wide",
+        "transition-colors",
+        "duration-200",
     ].join(" "),
     {
         variants: {
             variant: {
                 primary:
-                    "bg-primary/10 border-primary/10 text-primary",
+                    "bg-primary-light border-primary/20 text-primary",
 
                 secondary:
-                    "bg-secondary/10 border-secondary/20 text-secondary",
+                    "bg-secondary-light border-secondary/20 text-secondary",
 
                 accent:
-                    "bg-accent/15 border-accent/20 text-accent",
+                    "bg-accent-light border-accent/20 text-accent",
 
                 mint:
-                    "bg-mint/20 border-mint/20 text-mint",
+                    "bg-mint-light border-mint/20 text-mint",
 
                 peach:
-                    "bg-peach/25 border-peach/30 text-[#C77B55]",
+                    "bg-peach-light border-accent/20 text-accent",
 
                 neutral:
-                    "bg-white/70 border-border text-foreground-secondary",
+                    "bg-surface border-border text-foreground-secondary",
 
                 glass:
-                    "bg-white/40 backdrop-blur-xl border-white/60 text-foreground",
+                    "bg-surface/80 backdrop-blur-sm border-border text-foreground shadow-xs",
             },
 
             size: {
-                xs: "px-2.5 py-1 text-[10px]",
-                sm: "px-3 py-1.5 text-xs",
-                md: "px-4 py-2 text-sm",
-                lg: "px-5 py-2.5 text-base",
+                xs: "px-2 py-0.5 text-[11px]",
+                sm: "px-2.5 py-1 text-xs",
+                md: "px-3.5 py-1.5 text-xs font-semibold",
+                lg: "px-4 py-2 text-sm font-semibold",
             },
         },
 

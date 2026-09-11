@@ -8,125 +8,99 @@ html {
 }
 
 body {
-  background:
-    radial-gradient(circle at top left,
-      rgba(124, 158, 178, .15),
-      transparent 30%),
-    radial-gradient(circle at top right,
-      rgba(184, 169, 201, .15),
-      transparent 35%),
-    radial-gradient(circle at bottom right,
-      rgba(240, 183, 164, .12),
-      transparent 30%),
-    linear-gradient(180deg,
-      var(--background),
-      var(--background-alt));
-  background-attachment: fixed;
+  background-color: var(--background);
   color: var(--foreground);
   font-family: var(--font-body);
   min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* Subtle architectural grid pattern for product/SaaS feel */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: 
+    linear-gradient(to right, rgba(24, 27, 32, 0.025) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(24, 27, 32, 0.025) 1px, transparent 1px);
+  background-size: 64px 64px;
+  pointer-events: none;
+  z-index: 0;
 }
 
 .container {
   width: 100%;
   max-width: var(--container-width);
   margin-inline: auto;
-  padding-inline: 48px;
+  padding-inline: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .container {
+    padding-inline: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding-inline: 2.5rem;
+  }
 }
 
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 7px;
 }
 
 ::-webkit-scrollbar-track {
-  background: transparent;
+  background: var(--background-alt);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--primary);
+  background: #C4CCD4;
   border-radius: 999px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--secondary);
+  background: var(--primary);
 }
 
 .bg-soft {
-
   background: var(--gradient-card);
-
-}
-
-.blob {
-
-  position: absolute;
-
-  border-radius: 999px;
-
-  filter: blur(70px);
-
-  opacity: .45;
-
-  z-index: -1;
-
-}
-
-.card-soft {
-
-  position: relative;
-
-  overflow: hidden;
-
-}
-
-.card-soft::before {
-
-  content: "";
-
-  position: absolute;
-
-  inset: 0;
-
-  border-radius: inherit;
-
-  pointer-events: none;
-
-  box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, .85),
-    inset 0 -1px 0 rgba(255, 255, 255, .2);
-
 }
 
 /* ========= TEXT GRADIENT ========= */
-
 .gradient-text {
-
   background: var(--gradient-primary);
-
   background-clip: text;
   -webkit-background-clip: text;
-
   color: transparent;
   -webkit-text-fill-color: transparent;
-
   display: inline-block;
+}
 
+.gradient-accent-text {
+  background: var(--gradient-accent);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
 }
 
 .bg-gradient-primary {
-    background-image: var(--gradient-primary);
+  background-image: var(--gradient-primary);
+}
+
+.bg-gradient-accent {
+  background-image: var(--gradient-accent);
 }
 
 .glass {
-
-  backdrop-filter: blur(18px);
-
-  background: rgba(255, 255, 255, .45);
-
-  border: 1px solid rgba(255, 255, 255, .55);
-
+  backdrop-filter: blur(16px);
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid var(--border);
 }
-
 
 img {
   display: block;
@@ -134,10 +108,10 @@ img {
 }
 
 ::selection {
-  background: var(--primary);
-  color: white;
+  background: var(--accent);
+  color: #ffffff;
 }
 
 a {
-  transition: .3s;
+  transition: all 0.2s ease-in-out;
 }
